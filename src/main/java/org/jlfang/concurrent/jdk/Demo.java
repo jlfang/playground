@@ -10,7 +10,7 @@ import redis.clients.jedis.Jedis;
 public class Demo {
     private static final String SERVER_URL = "129.28.206.204";
     private static final int SERVER_PORT = 6379;
-    private static final String PASSWORD = "fjl1990";
+    private static final String PASSWORD = "******";
     public static void main(String[] args) {
         Jedis jedis = new Jedis(SERVER_URL,SERVER_PORT);
         jedis.auth(PASSWORD);

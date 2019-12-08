@@ -16,7 +16,7 @@ public class SentinelDemo {
     private static final String URL1 = "129.28.206.204:28000";
     private static final String URL2 = "129.28.206.204:28001";
     private static final String URL3 = "129.28.206.204:28002";
-    private static final String PASSWORD = "fjl1990";
+    private static final String PASSWORD = "******";
 
     public static void main(String[] args)  {
         Set<String> set=new HashSet<>();
