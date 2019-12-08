@@ -47,6 +47,11 @@ public class ApplicationRunner {
         int[] res7 = CountingSort.sort(nums);
         System.out.println("After Sort:  "+Arrays.toString(res7));
         System.out.println("==============================");
+        System.out.println("******Shell Sort Start*******");
+        System.out.println("Before Sort: "+ Arrays.toString(nums));
+        int[] res8 = ShellSort.sort(nums);
+        System.out.println("After Sort:  "+Arrays.toString(res8));
+        System.out.println("==============================");
     }
 
 }

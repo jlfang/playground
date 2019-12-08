@@ -7,8 +7,20 @@ package org.jlfang.sort;
  */
 public class ShellSort {
 
-    public int[] shellSort(int[] source){
+    public static int[] sort(int[] source){
+        int h =1;
+        while(h < source.length/3){
+            h = h * 3 + 1;
+        }
 
+        while(h>=1){
+            for(int i=h;i < source.length;i++){
+                for(int j=i;j>=h && source[j]<source[j-h];j-=h){
+                    SortUtils.swap(j,j-h,source);
+                }
+            }
+            h/=3;
+        }
 
         return source;
     }
